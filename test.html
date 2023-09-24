@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <img src="https://picsum.photos/300/200?1" alt="">
-  <p>
-    Lorem, ipsum dolor. Ipsum possimus quo totam. Ipsum quos dolores nemo, doloremque quo nemo eum, ducimus e
-  </p>
-<script>
-
-
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container{
+        --activeColor: #2c3e50; /* Green */
+        --defauleColor: #d5d5d5; /* Gray */
+        width: auto;
+        height: 320px;
+      }
+      .boxes {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        background-color: #f00;
+        box-shadow: 105px 0px #0e3bb8, 0px 105px #af2d2d, 105px 105px #0f83b1,
+          210px 0px #6b88da, 0px 210px #6e3d3d, 210px 105px #14b10f,
+          315px 0px #173380, 315px 210px #368834, 315px 105px #061f63,
+          105px 210px #550505, 420px 105px #4dddad, 420px 0px #394158,
+          210px 210px #6bb2ce, 420px 210px #9e0fb1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="boxes"></div>
+    </div>
+    
+    <script>
+      const container = document.querySelector('.container');
+      container.addEventListener('mousemove', function(e){
+        console.log(e)
+      })
+    </script>
+  </body>
 </html>
